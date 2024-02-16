@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +7,228 @@
       name="description"
       content="Fokhrul Islam | Front-end Developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device."
     />
+    <!-- Favicon CDN  -->
+    <link
+      rel="shortcut icon"
+      href="public/img/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <title>Fokhrul Islam | Front-end Developer | MERN Stack Developer</title>
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="public/css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
   </head>
-  <body>
-    <div class="container mx-auto">
-      <h1 class="text-2xl">Fokhrul Islam</h1>
-      <h2 class="text-3xl text-green-700">Fokhrul Islam</h2>
-      <h3 class="text-5xl text-fuchsia-500 font-bold">Fokhrul Islam</h3>
-    </div>
+  <body class="bg-dark">
+    <!-- Header Content  -->
+    <header>
+      <!-- Nav Section  -->
+      <nav class="container mx-auto py-10">
+        <div class="navbar">
+          <div class="flex-1">
+            <a
+              href="#"
+              class="text-4xl font-semibold text[linear-gradient(90deg, text-lightPrimary 0%, text-lightSecondary 100%)] cursor-pointer"
+              >Fokhrul</a
+            >
+          </div>
+          <div class="flex-none">
+            <ul class="flex gap-10 items-center">
+              <li>
+                <a href="#" class="text-Primary hover:text-neutral-300"
+                  >Project</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content   -->
+    <main>
+      <!-- Hero Section  -->
+      <section>
+        <div class="container mx-auto py-14 px-2">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-Primary text-xl">WEB DEVELOPER</h3>
+              <h1
+                class="text-7xl font-semibold text-[linear-gradient(90deg, text-lightPrimary 100% , text-lightSecondary 100% )] py-6"
+              >
+                Fokhrul Islam
+              </h1>
+              <p class="max-w-xl pb-6 text-Primary text-base">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt.
+              </p>
+              <a
+                href="#"
+                class="btn bg[linear-gradient(90deg, bg-lightPrimary 100% , bg-lightSecondary 100% )] text-dark px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
+                >Download CV</a
+              >
+            </div>
+            <img src="public/img/fokhrul's img/hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- About section   -->
+      <section>
+        <div class="container mx-auto py-14 px-2">
+          <h1 class="text-Primary text-2xl font-semibold pl-6 pb-4">
+            About me
+          </h1>
+          <p
+            class="text-base text-Primary border-l-4 border-l-lightSecondary pl-4 py-2 max-w-[850px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            minus accusantium eligendi corrupti dicta ipsam repellat maxime hic
+            tempora molestias impedit, sequi quia esse, laboriosam possimus illo
+            modi vel nisi?
+          </p>
+        </div>
+      </section>
+      <!-- Project Section  -->
+      <section>
+        <div class="container mx-auto py-14 px-2">
+          <h1 class="text-Primary text-2xl font-semibold py-6">Projects</h1>
+          <div class="grid justify-center grid-cols-3 gap-4">
+            <!-- Project item -->
+            <div class="card rounded-md bg-[#222525] shadow-xl">
+              <figure>
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body px-4">
+                <h2 class="card-title">Shoes!</h2>
+                <div>
+                  <button class="btn btn-info">HTML</button>
+                  <button class="btn btn-info">HTML</button>
+                </div>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section  -->
+      <section>
+        <div class="container mx-auto py-14 px-2">
+          <h1 class="text-Primary text-2xl font-semibold py-6">Skills</h1>
+          <div class="flex  justify-evenly items-center flex-wrap gap-16">
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/icon-2.png" alt="" />
+              <strong class="font-medium">HTML</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/css.png" alt="" />
+              <strong class="font-medium">CSS</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/icon-2.png" alt="" />
+              <strong class="font-medium">JavaScript</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/bootstrap.png" alt="" />
+              <strong class="font-medium">Bootstrap</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/tailwind.png" alt="" />
+              <strong class="font-medium">Tailwind CSS</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/icon-2.png" alt="" />
+              <strong class="font-medium">DaisyUI</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/Git-Icon-1788C 1.png" alt="" />
+              <strong class="font-medium">Git</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/icon-2.png" alt="" />
+              <strong class="font-medium">VS Code</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/node-js.png" alt="" />
+              <strong class="font-medium">Node-Js</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/icon-2.png" alt="" />
+              <strong class="font-medium">JavaScript</strong>
+            </div>
+            <!-- Skills Item -->
+            <div class="flex flex-col gap-4 items-center">
+              <img src="public/img/tools/icon-2.png" alt="" />
+              <strong class="font-medium">JavaScript</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Content  -->
+    <footer>
+      <div
+        class="container mx-auto py-20 px-2 text-center flex flex-col gap-11"
+      >
+        <div class="flex gap-16 justify-center items-center">
+          <a href="#">
+            <i
+              class="bi bi-envelope btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
+            ></i>
+            <p class="py-2 text-xm hover:text-lightSecondary">GMAIL</p>
+          </a>
+          <a href="#">
+            <i
+              class="bi bi-linkedin btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
+            ></i>
+            <p class="py-2 text-xm hover:text-lightSecondary">LINKEDIN</p>
+          </a>
+          <a href="#">
+            <i
+              class="bi bi-github btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
+            ></i>
+            <p class="py-2 text-xm hover:text-lightSecondary">GITHUB</p>
+          </a>
+        </div>
+        <div class="flex gap-12 justify-center items-center">
+          <a href="#" class="py-2 text-xm hover:text-lightSecondary">Project</a>
+          <a href="#" class="py-2 text-xm hover:text-lightSecondary">Contact</a>
+        </div>
+        <div>
+          <p>WEB DEVELOPER 2024</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
