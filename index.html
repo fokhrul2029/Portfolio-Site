@@ -40,20 +40,22 @@
           <div class="flex-1">
             <a
               href="#"
-              class="text-4xl font-semibold text[linear-gradient(90deg, text-lightPrimary 0%, text-lightSecondary 100%)] cursor-pointer"
+              class="text-2xl md:text-4xl font-semibold text[linear-gradient(90deg, text-lightPrimary 0%, text-lightSecondary 100%)] cursor-pointer"
               >Fokhrul</a
             >
           </div>
           <div class="flex-none">
-            <ul class="flex gap-10 items-center">
+            <ul class="flex gap-4 md:gap-10 items-center">
               <li>
-                <a href="public/view/project.html" class="text-Primary hover:text-neutral-300"
+                <a
+                  href="public/view/project.html"
+                  class="text-Primary hover:text-neutral-300"
                   >Project</a
                 >
               </li>
               <li>
                 <a
-                  class="btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
+                  class="btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark px-6 md:px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
                   href="public/view/contact.html"
                   >Contact</a
                 >
@@ -68,11 +70,13 @@
       <!-- Hero Section  -->
       <section>
         <div class="container mx-auto py-14 px-2">
-          <div class="flex justify-between items-center">
+          <div
+            class="flex flex-col md:flex-row text-center md:text-start justify-between items-center"
+          >
             <div>
               <h3 class="text-Primary text-xl">WEB DEVELOPER</h3>
               <h1
-                class="text-7xl font-semibold text-[linear-gradient(90deg, text-lightPrimary 100% , text-lightSecondary 100% )] py-6"
+                class="text-4xl md:text-7xl font-semibold text-[linear-gradient(90deg, text-lightPrimary 100% , text-lightSecondary 100% )] py-6"
               >
                 Fokhrul Islam
               </h1>
@@ -111,7 +115,9 @@
       <section>
         <div class="container mx-auto py-14 px-2">
           <h1 class="text-Primary text-2xl font-semibold py-6">Projects</h1>
-          <div class="grid justify-center grid-cols-3 gap-4">
+          <div
+            class="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
             <!-- Project item -->
             <div class="card rounded-md bg-[#222525] shadow-xl">
               <figure>
@@ -136,7 +142,7 @@
       <section>
         <div class="container mx-auto py-14 px-2">
           <h1 class="text-Primary text-2xl font-semibold py-6">Skills</h1>
-          <div class="flex  justify-evenly items-center flex-wrap gap-16">
+          <div class="flex justify-evenly items-center flex-wrap gap-16">
             <!-- Skills Item -->
             <div class="flex flex-col gap-4 items-center">
               <img src="public/img/tools/icon-2.png" alt="" />
@@ -202,7 +208,7 @@
         class="container mx-auto py-20 px-2 text-center flex flex-col gap-11"
       >
         <div class="flex gap-16 justify-center items-center">
-          <a target="_blank" href="http://mailto:ifokhrul.2029@gmail.com">
+          <a target="_blank" href="mailto:ifokhrul.2029@gmail.com">
             <i
               class="bi bi-envelope btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
             ></i>
@@ -222,13 +228,23 @@
           </a>
         </div>
         <div class="flex gap-12 justify-center items-center">
-          <a href="public/view/project.html" class="py-2 text-xm hover:text-lightSecondary">Project</a>
-          <a href="public/view/contact.html"py-2 text-xm hover:text-lightSecondary">Contact</a>
+          <a
+            href="public/view/project.html"
+            class="py-2 text-xm hover:text-lightSecondary"
+            >Project</a
+          >
+          <a
+            href="public/view/contact.html"
+            class="text-xm hover:text-lightSecondary"
+            >Contact</a
+          >
         </div>
         <div>
           <p>WEB DEVELOPER 2024</p>
         </div>
       </div>
     </footer>
+    <!-- Custom Js  -->
+    <script src="public/js/script.js"></script>
   </body>
 </html>
