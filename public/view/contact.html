@@ -29,6 +29,12 @@
       img {
         max-width: 100%;
       }
+      .success {
+        color: rgba(0, 128, 0, 0.781);
+      }
+      .error {
+        color: rgba(255, 0, 0, 0.671);
+      }
     </style>
   </head>
   <body class="bg-dark">
@@ -69,36 +75,45 @@
     <main>
       <!-- Contact From  -->
       <form
-        action="#"
+        id="my-form"
+        action="https://formspree.io/f/xkndrlob"
+        method="POST"
         class="max-w-[500px] mx-auto flex flex-col gap-4 py-14 px-4"
       >
         <label for="name">
           <span class="block py-2 text-xm">Name</span>
           <input
+            name="name"
             class="w-[100%] py-3 px-2 bg-transparent border focus:border-lightSecondary rounded outline-none"
             type="text"
             id="name"
             placeholder="Enter your name"
+            required
           />
         </label>
         <label for="eamil">
           <span class="block py-2 text-xm">Email</span>
           <input
+            name="email"
             class="w-[100%] py-3 px-2 bg-transparent border focus:border-lightSecondary rounded outline-none"
             type="email"
             id="eamil"
             placeholder="Enter your email"
+            required
           />
         </label>
         <label for="text">
           <span class="block py-2 text-xm">Message</span>
           <textarea
+            name="message"
             rows="6"
             class="w-[100%] py-3 px-2 bg-transparent border focus:border-lightSecondary rounded outline-none"
             id="text"
             placeholder="Enter your message"
+            required
           ></textarea>
         </label>
+        <p id="form-status" class="text-2xl"></p>
         <input
           class="btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
           type="submit"
