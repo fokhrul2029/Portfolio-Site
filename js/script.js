@@ -17,10 +17,11 @@ window.onscroll = () => {
 // Typed.js / js for Typing on Text
 var typed = new Typed(".typing", {
   strings: [
+    "MERN Stack Developer.",
     "Programming.",
     "Frontend Development.",
     "JavaScript Development.",
-    "React-Js.",
+    "React-Js Developer.",
     "Clear Code Design.",
   ],
   typeSpeed: 60,
