@@ -2,253 +2,759 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Fokhrul Islam | Front-end Developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device."
+      content="Fokhrul Islam | Web Application Developer, Front-end Developer, 
+    I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device."
     />
-    <!-- Favicon CDN  -->
+    <!-- Fav-icon of Application -->
     <link
       rel="shortcut icon"
-      href="public/img/images/favicon.png"
+      href="img/images/favicon.png"
       type="image/x-icon"
     />
-    <!-- Bootstrap icon CDN -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Bootstrap CSS and icon -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
-    <title>Fokhrul Islam | Front-end Developer | MERN Stack Developer</title>
-    <!-- Custom CSS  -->
-    <link rel="stylesheet" href="public/css/styles.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-      body {
-        font-family: "Montserrat", sans-serif;
-      }
-      img {
-        max-width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- AOS / Animation on Scrool - CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>
+      Fokhrul Islam | Web Application Developer, Front-end Developer
+    </title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-dark">
-    <!-- Header Content  -->
-    <header>
-      <!-- Nav Section  -->
-      <nav class="container mx-auto py-10">
-        <div class="navbar">
-          <div class="flex-1">
-            <a
-              href="#"
-              class="text-2xl md:text-4xl font-semibold text[linear-gradient(90deg, text-lightPrimary 0%, text-lightSecondary 100%)] cursor-pointer"
-              >Fokhrul</a
-            >
-          </div>
-          <div class="flex-none">
-            <ul class="flex gap-4 md:gap-10 items-center">
-              <li>
-                <a
-                  href="public/view/project.html"
-                  class="text-Primary hover:text-neutral-300"
-                  >Project</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark px-6 md:px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
-                  href="public/view/contact.html"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+  <body>
+    <!-- PreLoader Block -->
+    <div class="loader text-center">
+      <img src="img/images/loader.gif" alt="" />
+    </div>
+    <!-- Navigation Section -->
+    <nav
+      id="navbar"
+      class="overflow-hidden navbar navbar-expand-lg bg-dark shadow-lg navbar-dark fixed-top"
+    >
+      <div class="container">
+        <a href="#" id="logo" class="navbar-brand color-light">
+          <img src="img/images/favicon.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navbarScroll">
+          <ul
+            aria-labelledby="navbarScrollingDropdown"
+            class="navbar-nav fw-bold ms-auto"
+            id="myTab"
+          >
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-secondary active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-secondary">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#protfolio" class="nav-link text-secondary">Protfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Profession" class="nav-link text-secondary"
+                >Profession</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-secondary">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
+      <section
+        id="home"
+        class="active bg-dark text-light py-5 pb-md-0 text-center text-md-start"
+      >
+        <div class="container py-5">
+          <div
+            class="d-block d-md-flex align-items-center justify-content-between py-5 rounded-4 px-4 homeShadow"
+          >
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <h1 class="d-block d-md-none pb-3 pt-5 mt-5 text-info">
+                WELCOME TO MY WEBSITE
+              </h1>
+              <h1>
+                <div class="d-inline-block text-light">
+                  <span class="d-none d-md-inline-block">This is</span>
+                  <span class="d-inline-block d-md-none">I'm</span>
+                </div>
+                <span class="text-info">Fokhrul Islam</span>
+              </h1>
+              <span class="text-light fs-4 my-4 fw-bold">Expert at: </span>
+              <span class="typing my-4 text-info fs-4 fw-bold"></span>
+              <br />
+
+              <button class="text-light btn btn-success mt-5 mb-5">
+                <a href="img/Fokhrul's CV.pdf" class="nav-link" download>
+                  Download CV
+                </a>
+              </button>
+            </div>
+            <div class="homeImg d-none d-md-block">
+              <img
+                class="img-fluid"
+                src="img/fokhrul's img/img-2-out.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- Main Content   -->
-    <main>
-      <!-- Hero Section  -->
-      <section>
-        <div class="container mx-auto py-14 px-2">
+      </section>
+      <!-- About Section start  -->
+      <section id="about" class="bg-dark text-light py-5 pb-md-0">
+        <div class="container pt-5 pb-5">
           <div
-            class="flex flex-col-reverse md:flex-row justify-between items-center"
+            class="d-md-flex justify-content-between align-items-center pt-5"
           >
-            <div class="text-center md:text-left">
-              <h3 class="text-Primary text-xl">WEB DEVELOPER</h3>
-              <h1
-                class="text-4xl md:text-5xl lg:text-7xl font-semibold text-[linear-gradient(90deg, text-lightPrimary 100% , text-lightSecondary 100% )] py-6"
-              >
-                Fokhrul Islam
-              </h1>
-              <p class="max-w-xl pb-6 text-Primary text-base">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt.
+            <div class="about-img">
+              <img
+                src="img/fokhrul's img/Fokhrul's Image.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              class="text-light me-auto text-center text-md-start pb-1"
+            >
+              <h1 class="fw-bold">About Me</h1>
+              <b class="lead fs-5 fw-bold py-3 d-block">
+                <span>Developer</span>
+                <span class="text-info">& Designer</span>
+              </b>
+              <p class="lead fs-5 color-light">
+                I am a front-end web developer. I can provide clean code and
+                pixel perfect design. I also make the website more & more
+                interactive with web animations.A responsive design makes your
+                website accessible to all users, regardless of their device.
               </p>
               <a
-                href="#"
-                class="btn bg[linear-gradient(90deg, bg-lightPrimary 100% , bg-lightSecondary 100% )] text-dark px-12 hover:btn-info hover:border-transparent hover:text-neutral-800"
-                >Download CV</a
+                class="btn btn-outline-info rounded-5 px-5 py-2"
+                href="#Contact"
+                >Let's talk</a
               >
             </div>
-            <img
-              class="w-[80%] md:w-[50%]"
-              src="public/img/fokhrul's img/hero.png"
-              alt=""
-            />
           </div>
         </div>
       </section>
-      <!-- About section   -->
-      <section>
-        <div class="container mx-auto py-14 px-2">
-          <h1 class="text-Primary text-2xl font-semibold pl-6 pb-4">
-            About me
+      <!--   About Section end   -->
+      <!--============= Protfolio Section start =========== -->
+      <section id="protfolio" class="protfolioSection text-light">
+        <div class="container pb-4">
+          <h1 class="text-center color-light pt-5">
+            <span class="text-info border-bottom border-info shadow"
+              >Protfolio</span
+            >
           </h1>
-          <p
-            class="text-base text-Primary border-l-4 border-l-lightSecondary pl-4 py-2 max-w-[850px]"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-            minus accusantium eligendi corrupti dicta ipsam repellat maxime hic
-            tempora molestias impedit, sequi quia esse, laboriosam possimus illo
-            modi vel nisi?
-          </p>
-        </div>
-      </section>
-      <!-- Project Section  -->
-      <section>
-        <div class="container mx-auto py-14 px-2">
-          <h1 class="text-Primary text-2xl font-semibold py-6">Projects</h1>
-          <div
-            class="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-          >
-            <!-- Project item -->
-            <div class="card rounded-md bg-[#222525] shadow-xl">
-              <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body px-4">
-                <h2 class="card-title">Shoes!</h2>
-                <div>
-                  <button class="btn btn-info">HTML</button>
-                  <button class="btn btn-info">HTML</button>
+          <div class="row pt-5">
+            <!-- Protfolio Item 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-9 m-auto pt-4">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-easing="linear"
+                class="card bg-dark"
+              >
+                <div class="card-body">
+                  <h5 class="card-title text-success">WEB APPLICATION</h5>
+                  <p class="card-text">
+                    health care personalized health resources and user-friendly
+                    medicalize website.
+                  </p>
+                  <div class="project-link">
+                    <a
+                      target="_blank"
+                      class="btn btn-danger"
+                      href="https://github.com/fokhrul2029/Health-Care"
+                      >Repository Link</a
+                    >
+                  </div>
+                  <div class="protfolioCard rounded">
+                    <img src="img/projects/ProjectA.jpg" alt="" />
+                    <div class="protfolioContent">
+                      <a
+                        target="_blank"
+                        class="btn btn-info text-light"
+                        href="https://health-care2029.netlify.app/"
+                        >Preview Link</a
+                      >
+                    </div>
+                  </div>
                 </div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+            </div>
+            <!-- Protfolio Item 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-9 m-auto pt-4">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-easing="linear"
+                class="card bg-dark"
+              >
+                <div class="card-body">
+                  <h5 class="card-title text-info">WEB APPLICATION</h5>
+                  <p class="card-text">
+                    health care personalized health resources and user-friendly
+                    medicalize website.
+                  </p>
+                  <div class="project-link">
+                    <a
+                      target="_blank"
+                      class="btn btn-danger"
+                      href="https://github.com/fokhrul2029/landing-page-LaslesVPN"
+                      >Repository Link</a
+                    >
+                  </div>
+                  <div class="protfolioCard rounded">
+                    <img src="img/projects/ProjectB.jpg" alt="" />
+                    <div class="protfolioContent">
+                      <a
+                        target="_blank"
+                        class="btn btn-info text-light"
+                        href="https://lms2029.netlify.app/"
+                        >Preview Link</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Protfolio Item 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-9 m-auto pt-4">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-easing="linear"
+                class="card bg-dark"
+              >
+                <div class="card-body">
+                  <h5 class="card-title text-primary">WEB APPLICATION</h5>
+                  <p class="card-text">
+                    health care personalized health resources and user-friendly
+                    medicalize website.
+                  </p>
+                  <div class="project-link">
+                    <a
+                      target="_blank"
+                      class="btn btn-danger"
+                      href="https://github.com/fokhrul2029/financial-app-landing-page"
+                      >Repository Link</a
+                    >
+                  </div>
+                  <div class="protfolioCard rounded">
+                    <img src="img/projects/Financial-Mobile-App.png" alt="" />
+                    <div class="protfolioContent">
+                      <a
+                        target="_blank"
+                        class="btn btn-info text-light"
+                        href="https://app-lannding-page.netlify.app/"
+                        >Preview Link</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Skills Section  -->
-      <section>
-        <div class="container mx-auto py-14 px-2">
-          <h1 class="text-Primary text-2xl font-semibold py-6">Skills</h1>
-          <div class="flex justify-evenly items-center flex-wrap gap-16">
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/icon-2.png" alt="" />
-              <strong class="font-medium">HTML</strong>
+      <!-- Protfolio section end -->
+      <!-- Service/Profession Section Start -->
+      <section id="Profession" class="p-5 bg-dark text-light">
+        <div class="container pt-5">
+          <h1 class="text-center text-light py-5">
+            <span class="text-info border-bottom border-info shadow"
+              >What I Do</span
+            >
+          </h1>
+          <div class="row text-center">
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1500"
+              class="col-md-6 col-lg-4 mt-5"
+            >
+              <div class="card bg-dark color-light">
+                <div class="card-body text-center Boxes text-light">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-phone"></i>
+                  </div>
+                  <h3 class="Card-title mb-3">Web Design</h3>
+                  <p class="card-text">
+                    I can easily make your design into code within few hours.I
+                    will use HTML, CSS, JS and Bootstrap to Design Your Website.
+                  </p>
+                  <!-- <a href="#" class="btn btn-success">Read More</a> -->
+                </div>
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/css.png" alt="" />
-              <strong class="font-medium">CSS</strong>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1500"
+              data-aos-easing="linear"
+              class="col-md-6 col-lg-4 mt-5"
+            >
+              <div class="card bg-dark color-light my-4 my-md-0">
+                <div class="card-body text-center Boxes text-light">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <h3 class="Card-title mb-3">Web Development</h3>
+                  <p class="card-text">
+                    I will build your website from scratch. I will use Node.JS,
+                    React JS, MongoDB for your website backend.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                </div>
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/icon-2.png" alt="" />
-              <strong class="font-medium">JavaScript</strong>
+            <div
+              data-aos="flip-right"
+              data-aos-duration="1500"
+              data-aos-easing="linear"
+              class="col-md-6 col-lg-4 mt-5"
+            >
+              <div class="card bg-dark color-light">
+                <div class="card-body text-center Boxes text-light">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <h3 class="Card-title mb-3">Clean Code</h3>
+                  <p class="card-text pb-4">
+                    I can code your website in neat and clean that any developer
+                    can understand that.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                </div>
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/bootstrap.png" alt="" />
-              <strong class="font-medium">Bootstrap</strong>
+          </div>
+          <h3
+            class="pt-5 mb-5 d-inline-block text-info border-bottom border-info"
+          >
+            Which Tools I Use
+          </h3>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="linear"
+            class="owl-carousel owl-theme pb-5 mb-5"
+          >
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/vs-code.png"
+                  alt="Visual Studio"
+                  title="(IDE) Integrated development environment / Code Editor"
+                />
+                <span class="iconShadow vs-code"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://code.visualstudio.com/"
+                  >Visual Studio</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/tailwind.png" alt="" />
-              <strong class="font-medium">Tailwind CSS</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="https://vitejs.dev/logo-with-shadow.png"
+                  alt="Vite-con"
+                  title="Get ready for a development environment"
+                />
+                <span class="vite iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://vitejs.dev/"
+                  >Vite</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/icon-2.png" alt="" />
-              <strong class="font-medium">DaisyUI</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/live-server.png"
+                  alt="Live Server "
+                  title="Instant live-reloading for web development"
+                />
+                <span class="live-server iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                  >Live Server</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/Git-Icon-1788C 1.png" alt="" />
-              <strong class="font-medium">Git</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/node js.png"
+                  alt="Node.Js"
+                  title="Open-source, cross-platform JavaScript runtime environment"
+                />
+                <span class="nodejs iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://nodejs.org/en"
+                  >Node.Js</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/icon-2.png" alt="" />
-              <strong class="font-medium">VS Code</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/npm-icon.png"
+                  alt="npm"
+                  title="Package manager for Node.js and JavaScript"
+                />
+                <span class="npm iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://www.npmjs.com/"
+                  >npm</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/node-js.png" alt="" />
-              <strong class="font-medium">Node-Js</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/yarn-pkg-icon.png"
+                  alt="yarn icno"
+                  title="package manager for JavaScript"
+                />
+                <span class="yarn iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://yarnpkg.com/"
+                  >Yarn</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/icon-2.png" alt="" />
-              <strong class="font-medium">JavaScript</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/git-icon.png"
+                  alt="Git-icon"
+                  title="Powerful version control system for developers"
+                />
+                <span class="git iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://git-scm.com/"
+                  >Git</a
+                >
+              </div>
             </div>
-            <!-- Skills Item -->
-            <div class="flex flex-col gap-4 items-center">
-              <img src="public/img/tools/icon-2.png" alt="" />
-              <strong class="font-medium">JavaScript</strong>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/github-icon.png"
+                  alt="GitHub icon"
+                  title="Developer Platform to Deliver Secure of Software"
+                />
+                <span class="github iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://github.com/"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="item">
+              <div class="tools pt-3">
+                <img
+                  src="img/tools/prettier-icon.png"
+                  alt="prettier-icon"
+                  title="Code formatter for maintaining code style consistency"
+                />
+                <span class="prettier iconShadow"></span>
+                <a
+                  target="_blank"
+                  class="fs-4 text-info nav-link"
+                  href="https://prettier.io/"
+                  >Prettier</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <!-- Footer Content  -->
-    <footer>
-      <div
-        class="container mx-auto py-20 px-2 text-center flex flex-col gap-11"
+      <!-- Service section end -->
+      <!--Contact Section-->
+      <section id="contact" class="py-5 bg-dark text-light">
+        <div class="container mt-5 pt-5">
+          <div class="text-center">
+            <h1 class="text-info border-bottom border-info d-inline">
+              Contact Info
+            </h1>
+            <p class="fs-5 text-white-50 contact-des text-center m-auto pt-3">
+              All the contact information is given below, you can contact
+              anytime if you want.
+            </p>
+          </div>
+          <div class="socialInfo py-3">
+            <h3
+              class="text-info border-bottom border-info d-inline-block py-2 my-3 pt-3"
+            >
+              Stay Connected on Social Media
+            </h3>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="linear"
+              class="carousel2 owl-carousel owl-theme"
+            >
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/fokhrul2029/"
+                >
+                  <img src="img/social-media/linkedin-icon.png" alt="" />
+                </a>
+              </div>
+
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://facebook.com/ifokhrul.2029/"
+                >
+                  <img src="img/social-media/facebook-icon.png" alt="" />
+                </a>
+              </div>
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://www.instagram.com/ifokhrul.2029/"
+                >
+                  <img src="img/social-media/instagram icon.png" alt="" />
+                </a>
+              </div>
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://github.com/fokhrul2029"
+                >
+                  <img src="img/social-media/github-icon.png" alt="" />
+                </a>
+              </div>
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://twitter.com/ifokhrul2029"
+                >
+                  <img src="img/social-media/twitter icon.png" alt="" />
+                </a>
+              </div>
+
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://www.tiktok.com/@fokhrul2029"
+                >
+                  <img src="img/social-media/tiktok icon.png" alt="" />
+                </a>
+              </div>
+              <div class="item m-3">
+                <a
+                  class="tools"
+                  target="_blank"
+                  href="https://www.youtube.com/@fokhrul2029"
+                >
+                  <img src="img/social-media/youtube icon.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row py-5 align-items-center">
+            <div class="col-md-6 col-sm-12 py-2">
+              <h3
+                class="text-info border-bottom border-info d-inline-block py-2 my-3"
+              >
+                Primary Contact
+              </h3>
+              <div class="d-flex align-items-start py-3">
+                <!-- Item one -->
+                <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                  class="me-3 bg-info rounded-circle py-2"
+                >
+                  <i class="text-light bi bi-geo-alt-fill"></i>
+                </div>
+                <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="1000"
+                  data-aos-easing="linear"
+                  class="pe-5"
+                >
+                  <h5 class="m-0 text-info">Address</h5>
+                  <span class="pe-5 text-white-50"
+                    >Shoyssho Ura, Munshir Bazar, Lala Bazar Road, Sylhet</span
+                  >
+                </div>
+              </div>
+              <div class="d-flex align-items-start py-3">
+                <!-- Item two -->
+                <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                  class="me-3 bg-primary rounded-circle py-2"
+                >
+                  <i class="text-light bi bi-telephone-fill"></i>
+                </div>
+                <a target="_blank" href="tel:+8801742672425" class="nav-link">
+                  <div
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear"
+                  >
+                    <h5 class="m-0 text-primary">Phone</h5>
+                    <span class="text-white-50"> +880 1742 672425 </span>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-start py-3">
+                <!-- Item three -->
+                <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                  class="me-3 bg-success rounded-circle py-2"
+                >
+                  <i class="text-light bi bi-whatsapp"></i>
+                </div>
+                <a
+                  target="_blank"
+                  href="http://wa.me/+8801742672425"
+                  class="nav-link"
+                >
+                  <div
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear"
+                  >
+                    <h5 class="m-0 text-success">WhatsApp</h5>
+                    <span class="text-white-50"> +880 1742 672425 </span>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex align-items-start py-3">
+                <!-- Item four -->
+                <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                  class="me-3 bg-danger rounded-circle py-2"
+                >
+                  <i class="text-light bi bi-envelope-fill"></i>
+                </div>
+                <a
+                  target="_blank"
+                  href="http://mailto:ifokhrul.2029@gmail.com"
+                  class="nav-link"
+                >
+                  <div
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear"
+                  >
+                    <h5 class="m-0 text-danger">Email</h5>
+                    <span class="text-white-50">ifokhrul.2029@gmail.com</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 py-2">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58929.01619565235!2d91.77390786619863!3d24.85274713535693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751017129f45a3f%3A0x63b69b68673e6212!2zU2hveXNobyBVcmEgLSDgpo_gppXgprLgpr4g4Kas4Ka-4Kec4Ka_!5e1!3m2!1sen!2sbd!4v1678605999924!5m2!1sen!2sbd"
+                  class="border border-info rounded-4"
+                  width="100%"
+                  height="435"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="p-4 pb-3 text-light text-center position-relative black-bg"
       >
-        <div class="flex gap-16 justify-center items-center">
-          <a target="_blank" href="mailto:ifokhrul.2029@gmail.com">
-            <i
-              class="bi bi-envelope btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
-            ></i>
-            <p class="py-2 text-xm hover:text-lightSecondary">GMAIL</p>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/fokhrul2029/">
-            <i
-              class="bi bi-linkedin btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
-            ></i>
-            <p class="py-2 text-xm hover:text-lightSecondary">LINKEDIN</p>
-          </a>
-          <a target="_blank" href="https://github.com/fokhrul2029">
-            <i
-              class="bi bi-github btn bg[linear-gradient(90deg, bg-lightPrimary , bg-lightSecondary )] text-dark text-2xl rounded-full pt-4 pb-10 text-center hover:bg-transparent hover:text-lightSecondary hover:border-lightSecondary"
-            ></i>
-            <p class="py-2 text-xm hover:text-lightSecondary">GITHUB</p>
+        <div class="container">
+          <p class="lead">
+            AllRight Reserved by &copy;
+            <a
+              href="http://facebook.com/ifokhrul.2029"
+              target="_black"
+              class="nav-link text-info fw-bold d-inline"
+              >Fokhrul Islam</a
+            >
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-4">
+            <i class="bi bi-arrow-up-circle-h1"></i>
           </a>
         </div>
-        <div class="flex gap-12 justify-center items-center">
-          <a
-            href="public/view/project.html"
-            class="py-2 text-xm hover:text-lightSecondary"
-            >Project</a
-          >
-          <a
-            href="public/view/contact.html"
-            class="text-xm hover:text-lightSecondary"
-            >Contact</a
-          >
-        </div>
-        <div>
-          <p>WEB DEVELOPER 2024</p>
-        </div>
-      </div>
-    </footer>
-    <!-- Custom Js  -->
-    <script src="public/js/script.js"></script>
+      </footer>
+    </div>
+    <!-- jQuery v3.7.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel Js  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Typed.js / js for Typing on Text  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- AOS Library //Animation on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
